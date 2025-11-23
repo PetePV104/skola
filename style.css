@@ -1,0 +1,108 @@
+.egvipte {
+  color: black;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  background: url("https://img.freepik.com/free-photo/papyrus-texture_1194-5946.jpg")
+    no-repeat center/cover;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  color: #0b2e00;
+  text-shadow: 1px 1px 2px #00000050;
+}
+
+img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border: 4px solid #3b2b13;
+  border-radius: 8px;
+}
+
+/* კონტენტის ბლოკი */
+.section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+/* სურათის ორიენტაციები */
+.left img {
+  order: 1;
+}
+
+.right img {
+  order: 2;
+}
+
+.section h2,
+.section h3 {
+  font-size: 24px;
+  color: #3f2f06;
+  width: 100%;
+  text-shadow: 1px 1px 2px #00000030;
+}
+
+/* მენიუ */
+.menu {
+  width: 100%;
+  background: #222;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.menu a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* ავტორების ფიქსირებული ბლოკი — პრობლემის გამოსწორება */
+.authors-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+
+  width: auto;
+  max-width: 180px;
+
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+
+  font-size: 13px;
+  line-height: 1.35;
+
+  box-shadow: 0 0 10px #00000080;
+  z-index: 9999;
+}
+
+.authors-box b {
+  color: #ffd700;
+  font-size: 15px;
+}
+
+@media (max-width: 500px) {
+  .authors-box {
+    font-size: 12px;
+    padding: 8px 10px;
+    top: 8px;
+    right: 8px;
+  }
+}
