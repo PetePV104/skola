@@ -127,3 +127,43 @@ img {
     text-align: center;
   }
 }
+/* -------------------------- */
+/* ✨ GLOBAL PAGE ANIMATION  */
+/* -------------------------- */
+
+body {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: pageFade 0.9s ease-out forwards;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ✨ ბლოკების ნაზი გამოჩენა (art-box, section) */
+.art-box,
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: elementFade 0.9s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes elementFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
