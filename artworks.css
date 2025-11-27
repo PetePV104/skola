@@ -160,3 +160,33 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media (max-width: 500px) {
+  .authors-box {
+    font-size: 12px;
+    padding: 8px 10px;
+    top: 8px;
+    right: 8px;
+  }
+}
+/* ტელეფონის ვერსიაში ყველაფერი ცენტრში გადავიდეს */
+@media (max-width: 800px) {
+  .section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* ტექსტებიც ცენტრში */
+  }
+
+  .section img {
+    margin: 0 auto; /* სურათიც ცენტრში */
+    order: 1; /* სურათი ზემოთ */
+  }
+
+  .section h2,
+  .section h3 {
+    order: 2; /* ტექსტი ქვემოთ */
+    width: 100%;
+    text-align: center;
+  }
+}
